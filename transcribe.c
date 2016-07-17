@@ -51,8 +51,14 @@ main(int argc, char* argv[])
   rv = ps_end_utt(ps);
 
   hyp = ps_get_hyp(ps, &score);
+ 
   printf("Recognized: %s\n", hyp);
 
+  FILE *fp;
+  fp = fopen("transcription.txt", "w");
+  fprintf(fp, "Recognized: %s\n", hyp);
+
+  fclose(fp);
   fclose(fh);
   ps_free(ps);
   cmd_ln_free_r(config);
