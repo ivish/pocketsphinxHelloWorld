@@ -1,6 +1,6 @@
 To transcribe a file run:
 ./transcribe <file-name>
 
-example: ./transcribe julia.raw
+example: ./transcribe julia.wav
 
-Download the wavFiles Folder to listen to corresponding files
+The transcription of the file will be available in transcription.txt
