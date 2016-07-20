@@ -1,5 +1,5 @@
 To transcribe a file run:
-./transcribe <file-name>
+./transcribe **file-name**
 
 example: ./transcribe julia.wav
 
